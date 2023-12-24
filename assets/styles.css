@@ -72,6 +72,7 @@ body {
     border: 4px outset white;
     border-radius: 15px;
     left: 40vw;
+    margin-top: 10px;
 }
 
 .snowFlake {
@@ -116,6 +117,7 @@ body {
     /* border: 2px solid red; */
     color: red;
     font-size: 2rem;
+    z-index: 20;
 }
 
 .fadeUpBg:after,
@@ -131,6 +133,7 @@ body {
     height: 700px;
     right: 0;
     bottom: 40px;
+    z-index: -10;
 }
 .fadeUpBg:before {
     height: 400px;
