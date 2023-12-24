@@ -60,6 +60,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    margin: 10px;
 }
 
 .submit {
@@ -72,6 +73,7 @@ body {
     border: 4px outset white;
     border-radius: 15px;
     left: 40vw;
+    margin-top: 10px;
 }
 
 .snowFlake {
