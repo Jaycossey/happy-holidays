@@ -11,15 +11,10 @@ body {
     justify-content: center;
     text-align: center;
     padding: 100px;
+    padding-bottom: 0;
+    overflow: hidden;
 }
 
-body:before {
-
-}
-
-body:after {
-
-}
 
 .welcome {
     width: 90vw;
@@ -77,4 +72,98 @@ body:after {
     border: 4px outset white;
     border-radius: 15px;
     left: 40vw;
+}
+
+.snowFlake {
+    background-image: repeating-radial-gradient(circle at center, white 20%, silver 40%); 
+    border: 6px dotted white;
+    position: absolute;
+    animation: falling;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    border-radius: 50%;
+}
+
+
+@keyframes falling {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    25% {
+        transform: translate(20px, 25vh);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-20px, 60vh);
+    }
+    75% {
+        transform: translate(10px, 75vh);
+        opacity: 0;
+    }
+    100% { 
+        transform: translate(10px, 100vh);
+        opacity: 0;
+    }
+}
+
+.fadeUpBg {
+    background-image: linear-gradient(0, white 45%, transparent 70%);
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    color: red;
+    font-size: 2rem;
+}
+
+.fadeUpBg:after,
+.fadeUpBg:before {
+    position: absolute;
+    width: 160px;
+    content: '\A';
+    background-image: repeating-linear-gradient(0, green 90%, black 95%);
+    border-radius: 200% 200% 30px 30px;
+    filter: drop-shadow(0 0 15px black);
+}
+.fadeUpBg:after {
+    height: 700px;
+    right: 0;
+    bottom: 40px;
+}
+.fadeUpBg:before {
+    height: 400px;
+    right: 100px;
+    bottom: 60px;
+}
+
+.gift,
+.gift:after,
+.gift:before {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    background-image: linear-gradient(90deg, red 40%, green 40%, green 60%, red 60%);
+    filter: drop-shadow(0 0 15px black);
+}
+
+.gift {
+    left: 20;
+    bottom: 80px;
+}
+
+.gift:after {
+    left: 70px;
+    bottom: -10px;
+    content: '\A';
+    z-index: 10;
+}
+
+.gift:before {
+    left: 160px;
+    bottom: 20px;
+    z-index: 0;
+    content: '\A';
 }
