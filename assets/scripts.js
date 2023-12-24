@@ -86,7 +86,6 @@ const setCardMessage = () => {
     bottomDiv.className = "fadeUpBg";
 
     bottomDiv.innerText = `Happy Holidays ${userName}!\nWishing you and yours all the best for the new year!\nIan and Family`;
-    bottomDiv.innerText.style.zIndex = "30";
 
     const giftDiv = document.createElement('div');
     giftDiv.classList = "gift";
