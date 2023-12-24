@@ -1,0 +1,80 @@
+:root {
+
+}
+
+body {
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+}
+
+body:before {
+
+}
+
+body:after {
+
+}
+
+.welcome {
+    width: 90vw;
+    height: 70vh;
+    background-color: white;
+    margin: auto;
+    top: 50%;
+    border-radius: 30px;
+    border: 6px outset green;
+    background-image: radial-gradient(ellipse at left, #D90E0E, #820D0D);
+    display: flex;
+}
+
+.welcome:before {
+    position: absolute;
+    width: 10%;
+    height: 70vh;
+    content: '\A';
+    border: 8px dotted green;
+    left: 45%;
+    background-image: repeating-linear-gradient(0deg, yellow 10%, green 15%);
+    filter: drop-shadow(0 0 15px black);
+}
+
+.welcome:after {
+    height: 5%;
+    width: 90vw;
+    content: '\A';
+    position: absolute;
+    border: 8px dotted green;
+    background-image: repeating-linear-gradient(90deg, yellow 10%, green 15%);
+    left: 4.5vw;
+    top: 43.5vh;
+    filter: drop-shadow(0 0 15px black);
+}
+
+.nameInput {
+    margin: auto;
+    top: 50%;
+    z-index: 10;
+    height: 20px;
+    width: 20vw;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.submit {
+    position: absolute;
+    width: 20vw;
+    height: 40px;
+    top: 55%;
+    margin: auto;
+    text-align: center;
+    border: 4px outset white;
+    border-radius: 15px;
+    left: 40vw;
+}
